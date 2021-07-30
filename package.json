@@ -1,0 +1,31 @@
+{
+  "name": "@kaishen/auto",
+  "version": "1.11.0",
+  "description": "",
+  "main": "./lib/index.js",
+  "types": "./@types/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "build": "node build.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@axihe/snowflake": "^1.0.2",
+    "@kaishen/orm": "^2.8.2",
+    "decimal.js": "^10.2.0",
+    "moment": "^2.27.0",
+    "mysql2": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/moment": "^2.13.0",
+    "@types/node": "^14.0.14",
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
